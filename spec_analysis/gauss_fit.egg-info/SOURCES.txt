@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+gauss_fit/__init__.py
+gauss_fit/calibration.py
+gauss_fit/fix_spe.py
+gauss_fit/gamma_energies.py
+gauss_fit/gamma_energies.txt
+gauss_fit/gauss_peak_fit.py
+gauss_fit/nrg_res.py
+gauss_fit/plot_gauss.py
+gauss_fit/sim_blur.py
+gauss_fit/sim_reader.py
+gauss_fit.egg-info/PKG-INFO
+gauss_fit.egg-info/SOURCES.txt
+gauss_fit.egg-info/dependency_links.txt
+gauss_fit.egg-info/top_level.txt
