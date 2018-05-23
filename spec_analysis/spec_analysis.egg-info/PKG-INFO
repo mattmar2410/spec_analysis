@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: spec-analysis
+Version: 0.0.0
+Summary: Becquerel: Tools for radiation spectral analysis.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Download-URL: https://github.com/mattmar2410/spec_analysis/tree/master/spec_analysis
+Description: TODO: longer description -- this portion will go into 'long_description'
+        in the setup metadata.
+        
+        
+Platform: Windows
+Platform: Linux
+Platform: Solaris
+Platform: Mac OS-X
+Platform: Unix
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS

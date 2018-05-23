@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+spec_analysis/__init__.py
+spec_analysis/calibration.py
+spec_analysis/fix_spe.py
+spec_analysis/gamma_energies.py
+spec_analysis/gamma_energies.txt
+spec_analysis/gauss_peak_fit.py
+spec_analysis/nrg_res.py
+spec_analysis/plot_gauss.py
+spec_analysis/sim_blur.py
+spec_analysis/sim_reader.py
+spec_analysis.egg-info/PKG-INFO
+spec_analysis.egg-info/SOURCES.txt
+spec_analysis.egg-info/dependency_links.txt
+spec_analysis.egg-info/top_level.txt

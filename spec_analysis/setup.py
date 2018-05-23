@@ -39,17 +39,18 @@ VERSION             = '{}.{}.{}'.format(MAJOR, MINOR, MICRO)
 # TODO: license
 
 setup(
-    name = 'gauss_fit',
+    name = 'spec_analysis',
     description = DOCLINES[0],
     long_description = '\n'.join(DOCLINES[2:]),
+    download_url = 'https://github.com/mattmar2410/spec_analysis/tree/master/spec_analysis',
     classifiers=[_f for _f in CLASSIFIERS.split('\n') if _f],
     platforms = ['Windows', 'Linux', 'Solaris', 'Mac OS-X', 'Unix'],
      packages=[
-        'gauss_fit',
+        'spec_analysis',
         #'becquerel.parsers',
         #'becquerel.tools',
     ],
     setup_requires=['pytest-runner'],
     tests_require=['pytest', 'pytest-cov'],
-    package_data={'gauss_fit': ['*.txt']}
+    package_data={'spec_analysis': ['*.txt']}
 )
