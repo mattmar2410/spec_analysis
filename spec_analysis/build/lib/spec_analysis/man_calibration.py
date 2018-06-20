@@ -30,7 +30,6 @@ def man_calibration(channel_data, cnts_data, energy_list, range_data):
             x_loc = list(filter(lambda x:(channel_old)<channel_data[x]<(channel),range(len(channel_data))))
             #x_loc_pk = range(int(x_loc-5), int(x_loc[0]+5))
             pk_cnt = np.argmax(cnts_data[x_loc])
-            print(max(cnts_data[x_loc]))
             channel_max_list.append(x_loc[pk_cnt])
             channel_old = channel
             i += 1
