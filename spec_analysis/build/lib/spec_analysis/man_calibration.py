@@ -7,9 +7,6 @@ from lmfit.models import GaussianModel
 from lmfit.models import LinearModel
 from sys import argv
 
-energy_list = sa.gamma_energies('Am241','Cs137', 'Co60')
-print(energy_list)
-
 def man_calibration(channel_data, cnts_data, energy_list, range_data):
 
     '''
