@@ -8,7 +8,8 @@ from .sim_reader import cosima_output
 from .fix_spe import fix_spe_zero_cal
 from .nrg_res import fit_nrg_resolution
 from .sim_blur import sim_blur
+from .man_calibration import man_calibration
 
 __all__ = ['gamma_energies', 'plot_gauss', 'spectrum_calibration',
            'spectrum_gauss_fit', 'cosima_output', 'fix_spe_zero_cal',
-           'fit_nrg_resolution', 'sim_blur']
+           'fit_nrg_resolution', 'sim_blur', 'man_calibration']
