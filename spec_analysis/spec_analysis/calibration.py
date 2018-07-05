@@ -6,10 +6,10 @@ import statsmodels.api as sm
 from lmfit.models import GaussianModel
 from lmfit.models import LinearModel
 
-def spectrum_calibration(spectrum_data, energy_list, channel_width, clean_right):
+def calibration(spectrum_data, energy_list, channel_width, clean_right):
 
     '''
-    spectrum_calibration(spectrum_data, energy_list, channel_width, clean_right)
+    channel_number, energies = calibration(spectrum_data, energy_list, channel_width, clean_right)
     Returns two arrays that should be used with becquerel for linear calibration
     analog_cal = bq.LinearEnergyCal.from_points(chlist=channel_number, kevlist=energies)
 

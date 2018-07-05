@@ -1,14 +1,20 @@
 from lmfit.models import QuadraticModel
 import numpy as np
 import matplotlib.pyplot as plt
+import operator
 
 def fit_nrg_resolution(sigma, Energy):
     '''
-    fit_nrg_resolution(sigma, Energy)
+    fit = fit_nrg_resolution(sigma, Energy)
+    **Energy must be the same energy list used for spectrum_gauss_fit
+    **otherwise the energy and sigma values will not correspond
     Returns the quadratic fit to the Energy vs sigma plot
     sigma: generated from spectrum_gauss_fit
     Energy: generated from gamma_energies
     '''
+    energy_channel = list(zip(sigma, Energy))
+    energy_channel.sort(key=operator.itemgetter(1))
+    sigma, Energy = zip(*energy_channel)
     model = QuadraticModel(prefix='q1_')
     pars = model.guess(sigma, x=Energy)
     pars.update(model.make_params())

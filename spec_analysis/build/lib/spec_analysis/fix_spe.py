@@ -2,11 +2,11 @@ import os
 from copy import deepcopy
 import numpy as np
 
-def fix_spe_zero_cal(fname, fname_new=None):
+def fix_spe(fname, fname_new=None):
     '''
     fix_spe_zero_cal(fname, fname_new=None) creates a new file name for an uncalibrated
     gammavision spectrum
-    fname: the spectrum that needs to be calibrated 
+    fname: the spectrum that needs to be calibrated
     '''
     if fname_new is None:
         fname_new = '{}_fixed{}'.format(*os.path.splitext(fname))

@@ -10,7 +10,7 @@ from sys import argv
 def man_calibration(channel_data, cnts_data, energy_list, range_data):
 
     '''
-    man_calibration(energy_data, cnts_data, energy_list, range)
+    channel_number, energies = man_calibration(energy_data, cnts_data, energy_list, range)
     Returns two arrays that should be used with becquerel for linear calibration
     analog_cal = bq.LinearEnergyCal.from_points(chlist=channel_number, kevlist=energies)
     It is a manual input using a graph of channel_number vs cpskev_vals

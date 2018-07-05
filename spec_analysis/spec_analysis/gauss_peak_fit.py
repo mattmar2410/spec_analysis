@@ -4,23 +4,21 @@ import matplotlib.pyplot as plt
 import os
 from copy import deepcopy
 from .gamma_energies import gamma_energies
-from .calibration import spectrum_calibration
+from .calibration import calibration
 from lmfit.models import GaussianModel
 from lmfit.models import LinearModel
 import operator
 import math
 
-'''
-spectrum_gauss_fit takes an input spectrum and finds the peaks of the
-spectrum and fits a gaussian curve to the photopeaks
-'''
-def spectrum_gauss_fit(energy_data, cnts_data, energy_spectrum, channel_width):
+def gauss_peak_fit(energy_data, cnts_data, energy_spectrum, channel_width):
     '''
     spectrum_gauss_fit takes an input spectrum and finds the peaks of the
     spectrum and fits a gaussian curve to the photopeaks and returns the
     amplitude and sigma of the gaussian peak.
     Make sure the spectrum is calibrated first.
-    spectrum_gauss_fit(energy_data, cnts_data, energy_spectrum, channel_width)
+
+    sigma_list, amplitude_list = spectrum_gauss_fit(energy_data, cnts_data, energy_spectrum, channel_width)
+
     energy_data: .energies_kev that has been calibrated from becquerel
     cnts_data: .cps_vals from becquerel spectrum
     energy_spectrum: an array of gamma energies generated from gamma_energies

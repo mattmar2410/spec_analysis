@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def cosima_output(fname):
+def sim_reader(fname):
     '''
-    cosima_output(fname) returns the energy spectrum from a cosima run
+    nrg = cosima_output(fname) returns the energy spectrum from a cosima run
     fname: the generated simulation from cosima
     '''
     figure_counter=0; count_list = []; bin_centers_list = []
